@@ -8,7 +8,6 @@ with open("files.txt", "w", encoding="utf8") as out_file:
     for file_name in files:
 
         if file_name[-3:] == "zip":
-            print(file_name)
             zip_file = zipfile.ZipFile(file_name, "r")
 
             for zf_name in zip_file.namelist():
